@@ -1,0 +1,76 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body { 
+    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Menu Styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: linear-gradient(to bottom,#333,#222);
+    color: white;
+    z-index: 100;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+border-radius:5px;
+}
+
+#navbar ul li a:hover {
+    color: #555;
+}
+#navbar ul li a.active {
+ background-color:#777;
+}
+
+/* Sections with content */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: 50px; /* To prevent content from hiding under navbar */
+}
+
+section#home {
+    background-color: #f27935;
+    color: white;
+    text-align: center;
+}
+
+section#about, section#services, section#contact {
+    background-color: #6699CC;
+    color: #333;
+}
+
+/* Style when scrolled */
+.navbar-scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
